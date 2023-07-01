@@ -1,0 +1,147 @@
+html{
+    --color-blue: #666CA3;
+    --color-blue-d: #13183F;
+    --color-grey: #83869A;
+    --color-pink: #F74780;
+    --color-pink-l: #FFA7C3;
+    --color-white: #ffffff;
+    --gradient-pink: linear-gradient(#FF6F48, #F02aa6);
+    --gradient-blue: linear-gradient(#4851FF, #F02aa6); 
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+
+    --font-size-56: 56px;
+    --font-size-40: 40px;
+    --font-size-32: 32px;
+    --font-size-24: 24px;
+    --font-size-18: 18px;
+    --font-size-16: 16px;
+
+}
+
+h1{
+    font-size: var(--font-size-56);
+}
+
+.upper-hero{
+    display: inline-block;
+    max-width: 457px;
+    max-height: 360px;
+    margin-left: 160px;
+    margin-top: 250px;
+    padding-bottom: 200px;
+}
+
+.cell-btn{
+    color: var(--color-pink);
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    font-size: var(--font-size-18);
+    top: 80%;
+}
+
+.cell-btn:hover{
+    color: var(--color-pink-l);
+    cursor: pointer;
+    
+}
+
+div.cell > p{
+    color: var(--color-grey);
+}
+
+h3 {
+    font-weight: 800;
+}
+
+
+
+.image{
+    
+    max-height: 1000px;
+    max-width: 1000px;
+    left: 65%;
+    bottom: 25%;
+    position: absolute;
+    
+}
+
+.upper-container{
+    height: 60%;
+}
+body{
+    background-image: linear-gradient(var(--color-white), var(--color-grey));
+    height: 100%;
+}
+
+
+
+.container{
+    max-width: 1100px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto;
+}
+
+.cell{
+    max-width: 350px;
+    height: 320px;
+    padding: 0 35px 35px 35px;
+    background-color: var(--color-white);
+    border-radius: 5%;
+    position: relative;
+}
+
+.icons{
+    position: relative;
+    bottom: 20px;
+}
+
+.special{
+    background-image: var(--gradient-pink);
+    border-radius: 5%;
+}
+
+h2.cell {
+    margin: 0;
+    background-color: transparent;
+    color: white;
+    position: relative;
+    top: 30%;
+    font-size: var(--font-size-40);
+
+}
+
+.buttons{
+    color: white;
+    width: 167px;
+    height: 56px;
+    border-radius: 30px;
+    font-weight: 700;
+    border: transparent;
+}
+
+.blues{
+    background-color: var(--color-blue-d);
+
+}
+
+.pinks{
+    background-image: var(--gradient-pink);
+}
+
+.purples{
+    background-image: var(--gradient-blue);
+}
+
+footer{
+    height: 120px;
+    margin: 0px;
+    background-color: var(--color-blue-d);
+    min-width: 100%;
+    max-width: 100%;
+}
