@@ -1,0 +1,141 @@
+html {
+  --color-orange: hsl(25, 97%, 53%);
+  --colorwhite: hsl(0, 0%, 100%);
+  --color-grey-l: hsl(217, 12%, 63%);
+  --color-grey-m: hsl(216, 12%, 54%);
+  --color-blue-d: hsl(213, 19%, 18%);
+  --color-blue-vd: hsl(216, 12%, 8%);
+
+  --fontsize-normal: 15px;
+
+  --fontweight-normal: 400;
+  --fontweight-bold: 700;
+
+  font-family: "Overpass", sans-serif;
+  font-size: var(--fontsize-normal);
+
+  background-color: var(--color-blue-vd);
+}
+
+.rating {
+  /* visibility: hidden; */
+  position: relative;
+  top: 416px;
+  margin: auto;
+  background-color: var(--color-blue-d);
+  padding: 32px;
+  max-width: 348px;
+  min-height: 352px;
+
+  border-radius: 30px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  color: var(--color-grey-l);
+}
+
+h1 {
+  color: white;
+}
+
+.thank-you {
+  visibility: hidden;
+  margin: auto;
+  background-color: var(--color-blue-d);
+  padding: 32px;
+  max-width: 348px;
+  min-height: 352px;
+  border-radius: 30px;
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  color: var(--color-grey-l);
+  text-align: center;
+}
+
+.star-img {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+
+.star {
+  position: relative;
+  background-color: var(--color-blue-d);
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+
+p {
+  padding-right: 40px;
+  line-height: 24px;
+  max-width: 340px;
+}
+
+.rating-btn {
+  width: 51px;
+  height: 51px;
+  border-radius: 100%;
+  font-size: 16px;
+  font-weight: var(--fontweight-bold);
+  color: var(--color-grey-l);
+  background-color: var(--color-blue-d);
+  border: transparent;
+}
+.rating-btn:hover {
+  background-color: var(--color-grey-l);
+  color: var(--colorwhite);
+}
+
+.inner-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 45px;
+  border: transparent;
+  border-radius: 25px;
+  margin-top: 32px;
+  font-weight: var(--fontweight-bold);
+  background-color: var(--color-orange);
+  color: var(--colorwhite);
+  letter-spacing: 2px;
+}
+.submit-btn:hover {
+  color: var(--color-orange);
+  background-color: var(--colorwhite);
+}
+
+h3{
+  background-color: var(--color-blue-d);
+  border-radius: 20px;
+  max-width: 193px;
+  font-size: var(--fontsize-normal);
+  padding-top: 4px;
+  color: var(--color-orange);
+  font-weight: var(--fontweight-normal);
+  margin: 32px auto;
+}
+
+@media (max-width: 375px){
+  .rating, .thank-you{
+    max-width: 279px;
+    height: 360px;
+    margin: 24px;
+  }
+  div.thank-you > p {
+    padding-right: 0;
+  }
+
+  .rating-btn{
+    width: 42px;
+    height: 42px;
+  }
+}
